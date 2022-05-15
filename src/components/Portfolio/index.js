@@ -12,8 +12,4 @@ function work() {
     ]
 }
 
-
-
-
-
 // https://raesii.github.io/Password-Generator/

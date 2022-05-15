@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation/index';
 import About from './components/About/index';
-import Contact from './components/Contact/Contact';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <main>
         <About/>
       </main>
+      <Contact/>
     </div>
   );
 }
