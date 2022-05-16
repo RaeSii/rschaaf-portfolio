@@ -4,7 +4,7 @@ import { Form, Row, Button, Col } from 'react-bootstrap';
 
 function Contact() {
   return (
-    <div style={{ width: '36rem'}} className="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+    <div style={{ width: '36rem'}} className="p-3 bg-dark text-white justify-content-center rounded-end">
       <Form>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridName">
