@@ -1,77 +1,72 @@
 import React from "react";
-import { CardGroup, Card } from "react-bootstrap";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import { CardGroup, Card, Button } from "react-bootstrap";
+import { BsGithub } from "react-icons/bs";
+import Footer from "../Footer";
 
 function Work() {
     const projects = [
         {
             name: 'Password Generator',
-            description: '',
+            description: 'Password Generating App',
             live: 'https://raesii.github.io/Password-Generator/',
-            github: '',
+            github: 'https://github.com/RaeSii/portfolio-generator.git',
             image: '/images/pwd.png'
         },
         {
-            name: 'Password Generator',
-            description: '',
+            name: 'Work Day Scheduler',
+            description: 'Stay on schedule with this Daily Work Scheduler',
             live: 'https://raesii.github.io/work-day-scheduler/',
-            github: '',
-            image: '/images/pwd.png'
+            github: 'https://github.com/RaeSii/work-day-scheduler.git',
+            image: '/images/sched.png'
         },
         {
-            name: 'Password Generator',
-            description: '',
+            name: 'Weather Dashboard',
+            description: 'Get the latest weather conditions anywhere in the world with this Cool Weather app',
             live: 'https://raesii.github.io/weather-dashboard/',
-            github: '',
-            image: '/images/pwd.png'
+            github: 'https://github.com/RaeSii/weather-dashboard.git',
+            image: '/images/weather.png'
         },
         {
-            name: 'Password Generator',
-            description: '',
-            live: 'https://raesii.github.io/Password-Generator/',
-            github: '',
-            image: '/images/pwd.png'
+            name: 'Team Roster',
+            description: 'Team Builder maker app',
+            live: 'https://raesii.github.io/team-info-maker/',
+            github: 'https://github.com/RaeSii/team-info-maker.git',
+            image: '/images/Roster.png'
         },
         {
-            name: 'Password Generator',
-            description: '',
+            name: 'Note Taker',
+            description: 'Take notes with our easy to use Note Taking app',
             live: 'https://raesii.github.io/scribe/',
-            github: '',
-            image: '/images/pwd.png'
-        },
-        {
-            name: 'Password Generator',
-            description: '',
-            live: 'https://raesii.github.io/scribe/',
-            github: '',
-            image: '/images/pwd.png'
+            github: 'https://github.com/RaeSii/scribe.git',
+            image: '/images/scribe.png'
         }
     ]
 
     return (
         <section className="container">
-                        <h1 className="section-heading" >
+            <h1 className="section-heading" >
                 Portfolio
             </h1>
-        <CardGroup>
-            {projects.map((element, key) =>
+            <CardGroup>
+                {projects.map((element, key) =>
 
-                <Card key={key}>
-                    <Card.Img variant="top" src={process.env.PUBLIC_URL + element.image} />
-                    <Card.Body>
+                    <Card style={{ width: '18rem' }} key={key}>
                         <Card.Title>{element.name}</Card.Title>
-                        <Card.Text>
-                            {element.description}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <a href={element.live}>live</a>
-                        <a href={element.github}>github</a>
-                    </Card.Footer>
-                </Card>
-
-            )}
-        </CardGroup>
+                        <Card.Img variant="top" src={process.env.PUBLIC_URL + element.image} />
+                        <Card.Body>
+                            <Card.Title>{element.name}</Card.Title>
+                            <Card.Text>
+                                {element.description}
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Footer class="mx-auto px-5">
+                            <Button variant="dark" href={element.live}>Live</Button>
+                            <Button variant="dark" href={element.github}><BsGithub /></Button>
+                        </Card.Footer>
+                    </Card>
+                )}
+            </CardGroup>
+            <Footer />
         </section>
     )
 }

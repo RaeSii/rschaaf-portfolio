@@ -6,7 +6,7 @@ function About() {
     return (
         <section className="container">
 
-            <h1 className="section-heading" >
+            <h1 className="section-heading">
                 About Me ...
             </h1>
             <article className="container d-flex justify-content-evenly">

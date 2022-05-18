@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Row, Button, Col } from 'react-bootstrap';
+import Footer from "../Footer";
 
 function Contact() {
   return (
-    <div style={{ width: '36rem'}} className="p-3 bg-dark text-white justify-content-center rounded-end">
+    <section className="container">
+
+    <h1 className="section-heading">
+        Contact
+
+    </h1>
+    <article className="container d-flex justify-content-evenly">
+    <div className="p-3 bg-dark text-white d-flex justify-content-evenly rounded-end" style={{ width: '36rem' }} >
       <Form>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridName">
@@ -21,7 +30,7 @@ function Contact() {
 
         <Form.Group className="mb-3" controlId="formGridMessage">
           <Form.Label>Message</Form.Label>
-          <Form.Control placeholder="Message here ..." />
+          <Form.Control placeholder="Message here ..." style={{ height: '200px' }}/>
         </Form.Group>
 
         <Form.Group className="mb-3" id="formGridCheckbox">
@@ -33,6 +42,9 @@ function Contact() {
         </Button>
       </Form>
     </div>
+    </article>
+    <Footer/>
+    </section>
   );
 }
 
