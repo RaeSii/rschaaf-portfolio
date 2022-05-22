@@ -47,7 +47,7 @@ function Work() {
             <h1 className="section-heading" >
                 Portfolio
             </h1>
-            <CardGroup>
+            <CardGroup className="mb-5 d-flex justify-content-evenly">
                 {projects.map((element, key) =>
 
                     <Card style={{ width: '18rem' }} key={key}>
