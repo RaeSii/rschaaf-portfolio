@@ -6,7 +6,7 @@ function Navigation({ currentPage, handlePageChange }) {
 
     return (
         <header>
-            <Navbar bg="dark" variant="dark">
+            <Navbar>
                 <Container>
                     <Navbar.Brand onClick={() => handlePageChange('Home')} href="#home">Rachel Schaaf</Navbar.Brand>
                     <Nav inline my="2 lg-0">

@@ -45,7 +45,7 @@ function Contact() {
         Contact Me
       </h1>
       <article className="container mb-5 d-flex justify-content-evenly">
-        <div className="p-3 bg-dark text-white d-flex justify-content-evenly rounded-end" style={{ width: '36rem' }} >
+        <div className="p-3 text-white d-flex justify-content-evenly rounded-end" style={{ width: '36rem' }} >
           <Form id="contact-form" onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridName">
@@ -73,7 +73,7 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-            <Button variant="primary" type="submit">
+            <Button variant="secondary" type="submit">
               Submit
             </Button>
           </Form>

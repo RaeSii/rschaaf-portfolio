@@ -51,17 +51,16 @@ function Work() {
                 {projects.map((element, key) =>
 
                     <Card style={{ width: '18rem' }} key={key}>
-                        <Card.Title>{element.name}</Card.Title>
+                        <Card.Title className="text-center">{element.name}</Card.Title>
                         <Card.Img variant="top" src={process.env.PUBLIC_URL + element.image} />
                         <Card.Body>
-                            <Card.Title>{element.name}</Card.Title>
                             <Card.Text>
                                 {element.description}
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer class="mx-auto px-5">
-                            <Button variant="dark" href={element.live}>Live</Button>
-                            <Button variant="dark" href={element.github}><BsGithub /></Button>
+                            <Button variant="secondary" href={element.live}>Live</Button>
+                            <Button variant="secondary" href={element.github}><BsGithub/></Button>
                         </Card.Footer>
                     </Card>
                 )}

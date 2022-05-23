@@ -9,9 +9,9 @@ function Footer() {
         <footer className="bg-secondary d-flex justify-content-evenly">
             <Container className="px-4" >
                 <div className="d-flex justify-content-evenly">
-                <BsGithub href="https://github.com/RaeSii" />
-                <BsTwitter href="https://www.twitter.com/raesii"/>
-                <BsLinkedin href="https://www.linkedin.com/in/rachel-schaaf" />
+                <a href="https://github.com/RaeSii"><BsGithub /></a>
+                <a href="https://www.twitter.com/raesii"><BsTwitter/></a>
+                <a href="https://www.linkedin.com/in/rachel-schaaf"><BsLinkedin/></a>
                 </div>
                 <p class="text-center text-white">
                     RSCHAAF &copy; 2022
