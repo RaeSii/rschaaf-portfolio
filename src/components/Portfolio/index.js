@@ -36,7 +36,7 @@ function Work() {
         {
             name: 'Note Taker',
             description: 'Take notes with our easy to use Note Taking app',
-            live: 'https://raesii.github.io/scribe/',
+            live: 'https://pure-hamlet-23274.herokuapp.com/',
             github: 'https://github.com/RaeSii/scribe.git',
             image: '/images/scribe.png'
         }
