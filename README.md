@@ -1,13 +1,4 @@
-# RSCHAAF PORTFOLIO
-
-## Requirements
-
-#### Node installation
-
-  You can install nodejs and npm easily by running the following commands.
-
-      $ npm i react react-bootstrap bootstrap react-dom 
-    
+# RSCHAAF PORTFOLIO  
 
 ### Usage
 
@@ -58,6 +49,3 @@ JavaScript, React, NodeJS, Bootstrap
 
 ### Coded by
 Rachel Schaaf
-
-### ScreenShot
-<!-- ![RSCHAAF Portfolio]() -->
