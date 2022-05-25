@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rschaaf-portfolio/static/css/main.963e575a.css",
+    "main.js": "/rschaaf-portfolio/static/js/main.867bde6a.js",
+    "static/js/787.4286b171.chunk.js": "/rschaaf-portfolio/static/js/787.4286b171.chunk.js",
+    "static/media/prof.jpg": "/rschaaf-portfolio/static/media/prof.fde194620e7de17d9127.jpg",
+    "index.html": "/rschaaf-portfolio/index.html",
+    "main.963e575a.css.map": "/rschaaf-portfolio/static/css/main.963e575a.css.map",
+    "main.867bde6a.js.map": "/rschaaf-portfolio/static/js/main.867bde6a.js.map",
+    "787.4286b171.chunk.js.map": "/rschaaf-portfolio/static/js/787.4286b171.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.963e575a.css",
+    "static/js/main.867bde6a.js"
+  ]
+}
